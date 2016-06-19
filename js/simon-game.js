@@ -111,6 +111,7 @@ $(document).ready(function(){
 				highlighter(game.toPress);
 			}
 			else{
+				game.counter = 1;
 				game.toPress = [];
 				randomizer();
 			}
