@@ -3,20 +3,31 @@
 <head>
 	<title>Simon Game</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
 </head>
 <body>
 <div class="center">
-<!-- 	<h1>SIMON</h1> -->
+	<h1>SIMON</h1>
+	<div class="counterScreen">
+		<span id="counter">--</span>
+	</div>
+
+<button class="menuButton" id="start">Start</button>
+<button class="menuButton" id="strict">Strict</button>
+<div class="led"></div>
+
 </div>
 <div class="simon">
 
-	<button class="button" id="green"></button>
-	<button class="button" id="red"></button>
-	<button class="button" id="yellow"></button>
-	<button class="button" id="blue"></button>
+	<button class="button cantClick" id="green"></button>
+	<button class="button cantClick" id="red"></button>
+	<button class="button cantClick" id="yellow"></button>
+	<button class="button cantClick" id="blue"></button>
 
 </div>
 
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="js/simon-game.js"></script>
 </body>
 </html>
